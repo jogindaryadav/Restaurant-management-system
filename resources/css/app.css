@@ -1,0 +1,26 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+  /* Custom Elegant Scrollbar */
+  .custom-scroll::-webkit-scrollbar {
+    height: 6px; /* thin scrollbar */
+  }
+
+  .custom-scroll::-webkit-scrollbar-track {
+    background: transparent; /* minimal track */
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background-color: #e35f0e; /* thumb matches your theme */
+    border-radius: 9999px;
+  }
+
+  /* Firefox */
+  .custom-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #e35f0e transparent;
+  }
+
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
