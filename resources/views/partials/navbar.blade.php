@@ -7,7 +7,8 @@
         <li><a href="#reservation" class="hover:text-[#e35f0e]">Reservation</a></li>
         <li class="hover:text-[#e35f0e]">
             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-            <a href="">Login</a>
+            <!-- <a href="">Login</a> -->
+            <a href="{{ route('login') }}">Login</a>
         </li>
         <li><a href="" class="hover:text-[#e35f0e]">Register</a></li>
         <button id="darkToggle" class="border p-2 rounded-full">

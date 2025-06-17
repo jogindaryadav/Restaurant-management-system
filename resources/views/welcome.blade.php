@@ -74,13 +74,13 @@
     <!-- Search Bar -->
     <div class="flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
       <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
-      <input type="text" placeholder="Search menu items" class="w-full bg-transparent outline-none text-lg dark:placeholder-gray-400" />
+      <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-lg dark:placeholder-gray-400" />
     </div>
 
     <!-- Product Grid -->
     <div class="grid grid-cols-2 gap-6">
       <!-- Card Example -->
-      <div class="items-card item bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="item-card item bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
         <div class="space-y-2 max-w-[80%]">
           <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyfGVufDB8fDB8fHww" alt="Burger" class="rounded-lg w-full h-32 object-cover" />
           <p class="item-name text-lg font-semibold">Burgers</p>
@@ -90,7 +90,7 @@
         <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
       </div>
 
-      <div class="items-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
         <div class="space-y-2 max-w-[80%]">
           <img src="https://images.unsplash.com/photo-1642821373181-696a54913e93?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpeWFuaXxlbnwwfHwwfHx8MA%3D%3D" alt="Biryani" class="rounded-lg w-full h-32 object-cover" />
           <p class="item-name text-lg font-semibold">Biryani</p>
@@ -100,7 +100,7 @@
         <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
       </div>
 
-      <div class="items-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
         <div class="space-y-2 max-w-[80%]">
           <img src="https://images.pexels.com/photos/5409009/pexels-photo-5409009.jpeg" alt="Momo" class="rounded-lg w-full h-32 object-cover" />
           <p class="item-name text-lg font-semibold">Momo</p>
@@ -110,7 +110,7 @@
         <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
       </div>
 
-      <div class="items-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
         <div class="space-y-2 max-w-[80%]">
           <img src="https://images.pexels.com/photos/20408462/pexels-photo-20408462.jpeg" alt="Paratha" class="rounded-lg w-full h-32 object-cover" />
           <p class="text-lg font-semibold">Paratha</p>
@@ -120,7 +120,7 @@
         <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
       </div>
 
-      <div class="items-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
         <div class="space-y-2 max-w-[80%]">
           <img src="https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg" alt="Cake" class="rounded-lg w-full h-32 object-cover" />
           <p class="item-name text-lg font-semibold">Desserts Cake</p>
@@ -130,7 +130,7 @@
         <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
       </div>
 
-      <div class="items-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
         <div class="space-y-2 max-w-[80%]">
           <img src="https://images.pexels.com/photos/1059943/pexels-photo-1059943.jpeg" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
           <p class="item-name text-lg font-semibold">fishfry</p>
