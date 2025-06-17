@@ -1,4 +1,5 @@
 import './bootstrap';
+import "./script";
 document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('darkToggle');
     const html = document.documentElement;
