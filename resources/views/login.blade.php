@@ -2,11 +2,11 @@
 
 @section('content')
 
-<div class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="bg-gray-100 flex items-center justify-center min-h-screen dark:bg-black">
 
-  <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-sm text-center" id="login-box">
+  <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-sm text-center dark:bg-gray-900" id="login-box">
 
-    <h2 class="text-2xl font-semibold mb-6">Login</h2>
+    <h2 class="text-2xl font-semibold mb-6 dark:text-whitej">Login</h2>
 
     <input type="text" id="identifier" placeholder="Mobile Number"
       class="w-full px-4 py-2 border rounded-lg mb-4 focus:outline-none focus:ring focus:border-blue-300">
@@ -21,11 +21,11 @@
 
     <div class="text-sm mt-2 text-blue-500 hover:underline cursor-pointer" onclick="showForgot()">Forgot Password?</div>
 
-    <div class="text-sm mt-2 text-blue-500 hover:underline cursor-pointer" id="registerPage"><a href="register.html">Register yet if not login?</a></div>
+    <div class="text-sm mt-2 text-blue-500 hover:underline cursor-pointer" id="registerPage"><a href="{{ route('register') }}">Register yet if not login?</a></div>
   </div>
 
   <!-- Forgot Password Modal -->
-  <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden" id="forgot-box">
+  <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center" id="forgot-box">
     <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm text-center">
       <h3 class="text-lg font-semibold mb-4">Reset Password</h3>
 
@@ -48,5 +48,7 @@
     </div>
   </div>
 </div>
+
 @endsection
+
 

@@ -9,7 +9,7 @@
 
     <!-- Image -->
     <div class="overflow-hidden rounded-2xl shadow-md">
-      <img src="https://plus.unsplash.com/premium_photo-1661953124283-76d0a8436b87?w=600&auto=format&fit=crop&q=60" 
+      <img src="https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg" 
            alt="Restaurant Image" 
            class="h-full w-full object-cover transition-transform duration-300 hover:scale-105" />
     </div>
@@ -35,7 +35,7 @@
       </div>
 
       <!-- Delivery Info -->
-      <div class="mt-4 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-3 text-sm flex items-center justify-between max-w-sm">
+      <div class="ring ring-offset-2 mt-4 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-3 text-sm flex items-center justify-between max-w-sm">
         <span><i class="fa fa-clock-o mr-2"></i>Delivery in <strong>15 min</strong></span>
         <a href="#" class="text-[#e35f0e] underline hover:text-orange-600 transition">Change</a>
       </div>
@@ -70,77 +70,85 @@
     <!-- menu_bar -->
 <div class="bg-white dark:bg-black px-[7vw] py-6 text-black dark:text-white flex flex-row gap-6">
   <!-- Left: Product Menu -->
-  <div class="w-2/3">
-    <!-- Search Bar -->
-    <div class="flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
-      <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
-      <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-lg dark:placeholder-gray-400" />
-    </div>
-
-    <!-- Product Grid -->
-    <div class="grid grid-cols-2 gap-6">
-      <!-- Card Example -->
-      <div class="item-card item bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-        <div class="space-y-2 max-w-[80%]">
-          <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyfGVufDB8fDB8fHww" alt="Burger" class="rounded-lg w-full h-32 object-cover" />
-          <p class="item-name text-lg font-semibold">Burgers</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">A juicy burger stacked to perfection.</p>
-          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 465</p>
-        </div>
-        <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
-      </div>
-
-      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-        <div class="space-y-2 max-w-[80%]">
-          <img src="https://images.unsplash.com/photo-1642821373181-696a54913e93?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpeWFuaXxlbnwwfHwwfHx8MA%3D%3D" alt="Biryani" class="rounded-lg w-full h-32 object-cover" />
-          <p class="item-name text-lg font-semibold">Biryani</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Aromatic rice blended with spices.</p>
-          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
-        </div>
-        <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
-      </div>
-
-      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-        <div class="space-y-2 max-w-[80%]">
-          <img src="https://images.pexels.com/photos/5409009/pexels-photo-5409009.jpeg" alt="Momo" class="rounded-lg w-full h-32 object-cover" />
-          <p class="item-name text-lg font-semibold">Momo</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Steamed dumplings from the Himalayas.</p>
-          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
-        </div>
-        <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
-      </div>
-
-      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-        <div class="space-y-2 max-w-[80%]">
-          <img src="https://images.pexels.com/photos/20408462/pexels-photo-20408462.jpeg" alt="Paratha" class="rounded-lg w-full h-32 object-cover" />
-          <p class="text-lg font-semibold">Paratha</p>
-          <p class="item-name text-sm text-gray-600 dark:text-gray-400">Classic Indian flatbread.</p>
-          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
-        </div>
-        <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
-      </div>
-
-      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-        <div class="space-y-2 max-w-[80%]">
-          <img src="https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg" alt="Cake" class="rounded-lg w-full h-32 object-cover" />
-          <p class="item-name text-lg font-semibold">Desserts Cake</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Sweet dessert to finish your meal.</p>
-          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
-        </div>
-        <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
-      </div>
-
-      <div class="item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-        <div class="space-y-2 max-w-[80%]">
-          <img src="https://images.pexels.com/photos/1059943/pexels-photo-1059943.jpeg" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
-          <p class="item-name text-lg font-semibold">fishfry</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
-          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
-        </div>
-        <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
-      </div>
-    </div>
+<div class="w-2/3 mx-auto">
+  <!-- Search Bar -->
+  <div class="flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
+    <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
+    <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-lg dark:placeholder-gray-400" />
   </div>
+
+  <!-- Product Grid -->
+  <div id="productGrid" class="grid grid-cols-2 gap-6">
+    
+    <!-- Card 1 -->
+    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[80%]">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600" alt="Burger" class="rounded-lg w-full h-32 object-cover" />
+        <p class="item-name text-lg font-semibold">Burgers</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">A juicy burger stacked to perfection.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 465</p>
+      </div>
+      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[80%]">
+        <img src="https://images.unsplash.com/photo-1642821373181-696a54913e93?w=1000" alt="Biryani" class="rounded-lg w-full h-32 object-cover" />
+        <p class="item-name text-lg font-semibold">Biryani</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Aromatic rice blended with spices.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+      </div>
+      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[80%]">
+        <img src="https://images.pexels.com/photos/13072972/pexels-photo-13072972.jpeg" alt="Momo" class="rounded-lg w-full h-32 object-cover" />
+        <p class="item-name text-lg font-semibold">Momo</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Steamed dumplings from the Himalayas.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+      </div>
+      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[80%]">
+        <img src="https://images.pexels.com/photos/20408462/pexels-photo-20408462.jpeg" alt="Paratha" class="rounded-lg w-full h-32 object-cover" />
+        <p class="item-name text-lg font-semibold">Paratha</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Classic Indian flatbread.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+      </div>
+      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[80%]">
+        <img src="https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg" alt="Cake" class="rounded-lg w-full h-32 object-cover" />
+        <p class="item-name text-lg font-semibold">Desserts Cake</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Sweet dessert to finish your meal.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+      </div>
+      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[80%]">
+        <img src="https://images.pexels.com/photos/1059943/pexels-photo-1059943.jpeg" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
+        <p class="item-name text-lg font-semibold">Fishfry</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+      </div>
+      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
+    </div>
+
+  </div>
+</div>
+
 
   <!-- Right: Basket Sidebar -->
   <div class="w-1/3 h-fit bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl p-6">

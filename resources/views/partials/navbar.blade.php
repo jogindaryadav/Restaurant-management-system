@@ -1,16 +1,26 @@
 <div class="flex flex-row justify-between border-b-[1px] items-center px-[6vw] py-2">
     <div>
-        <img src="" alt="logo" class="rounded-full w-[4vw]">
+        <img src="https://images.pexels.com/photos/1858115/pexels-photo-1858115.jpeg" alt="logo" class="rounded-full w-[3vw] h-[3vw] ring-offset-2 ring ">
     </div>
     <ul class="flex flex-row gap-[3vw] text-xl text-black dark:text-white font-sans">
-        <li><a href="#view_menu" class="hover:text-[#e35f0e]">View Menu</a></li>
-        <li><a href="#reservation" class="hover:text-[#e35f0e]">Reservation</a></li>
+        <li class="hover:text-[#e35f0e]">
+            <a href="{{ route('welcome')}}" class="hover:text-[#e35f0e]">View Menu
+
+            </a>
+        </li>
+        <li class="hover:text-[#e35f0e]">
+            <a href="{{ route('reservation') }}">Reservation</a>
+        </li>
         <li class="hover:text-[#e35f0e]">
             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
             <!-- <a href="">Login</a> -->
             <a href="{{ route('login') }}">Login</a>
         </li>
-        <li><a href="" class="hover:text-[#e35f0e]">Register</a></li>
+        <li class="hover:text-[#e35f0e]">
+            <a href="{{ route('register') }}">Register
+                
+            </a>
+        </li>
         <button id="darkToggle" class="border p-2 rounded-full">
             <svg id="sunIcon" class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Register with Gmail OTP</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+@extends('layouts.app')
+
+@section('content')
+<style>
     .hidden { display: none; }
   </style>
-</head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
-  <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-md">
+
+<div class="dark:bg-black dark:text-white item-center flex justify-center min-h-screen bg-gray-100">
+  <div class="bg-gradient-to-r from-[#b34480] to-[#5e2b70]  dark:bg-gray-800 p-6 rounded-xl shadow-lg w-full max-w-md my-[5vh]">
     <h2 class="text-2xl font-bold text-center mb-6">Register</h2>
 
     <!-- Step 1: Gmail input -->
@@ -24,7 +20,7 @@
 
       <p class="text-sm text-center mt-4">
         Already registered?
-        <a href="login.html" onclick="redirectToLogin()" class="text-blue-600 hover:underline">Login here</a>
+        <a href="{{ route('login') }}" onclick="redirectToLogin()" class="text-blue-600 hover:underline">Login here</a>
       </p>
     </div>
 
@@ -48,49 +44,5 @@
       </button>
     </div>
   </div>
-
-  <script>
-    function sendOTP() {
-      const email = document.getElementById("email").value.trim();
-      if (!email.endsWith("@gmail.com")) {
-        alert("Only Gmail addresses are allowed.");
-        return;
-      }
-
-      // Simulate sending OTP
-      alert("OTP sent to: " + email);
-      document.getElementById("step-email").classList.add("hidden");
-      document.getElementById("step-otp").classList.remove("hidden");
-    }
-
-    function verifyOTP() {
-      const otp = document.getElementById("otp").value.trim();
-
-      if (/^\d{6}$/.test(otp)) {
-        alert("OTP verified successfully.");
-        document.getElementById("step-otp").classList.add("hidden");
-        document.getElementById("step-password").classList.remove("hidden");
-      } else {
-        alert("Invalid OTP. It should be a 6-digit number.");
-      }
-    }
-
-    function setPassword() {
-      const password = document.getElementById("password").value;
-
-      if (password.length >= 8) {
-        alert("Password set successfully!");
-        // Simulate redirect to home page
-        window.location.href = "index.html";
-      } else {
-        alert("Password must be at least 8 characters.");
-      }
-    }
-
-    function redirectToLogin() {
-      alert("Redirecting to login page...");
-      // You can change this to: window.location.href = 'login.html';
-    }
-  </script>
-</body>
-</html>
+</div> 
+@endsection
