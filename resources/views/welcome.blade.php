@@ -78,74 +78,124 @@
   </div>
 
   <!-- Product Grid -->
-  <div id="productGrid" class="grid grid-cols-2 gap-6">
+  <div id="productGrid" class="grid grid-cols-3 gap-6">
     
     <!-- Card 1 -->
-    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-      <div class="space-y-2 max-w-[80%]">
-        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600" alt="Burger" class="rounded-lg w-full h-32 object-cover" />
-        <p class="item-name text-lg font-semibold">Burgers</p>
-        <p class="text-sm text-gray-600 dark:text-gray-400">A juicy burger stacked to perfection.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 465</p>
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
+        <div class="flex flex-row p-[5px] items-center">
+         <p class="item-name text-lg font-semibold">Coffee</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400">A good day starts with a great cup of coffee.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 120</p>
       </div>
-      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
     </div>
 
     <!-- Card 2 -->
-    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-      <div class="space-y-2 max-w-[80%]">
-        <img src="https://images.unsplash.com/photo-1642821373181-696a54913e93?w=1000" alt="Biryani" class="rounded-lg w-full h-32 object-cover" />
-        <p class="item-name text-lg font-semibold">Biryani</p>
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-32 object-cover" />
+        <div class="flex flex-row p-[5px] items-center">
+         <p class="item-name text-lg font-semibold">Biryani</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Aromatic rice blended with spices.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>100</p>
       </div>
-      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
     </div>
 
     <!-- Card 3 -->
-    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-      <div class="space-y-2 max-w-[80%]">
-        <img src="https://images.pexels.com/photos/13072972/pexels-photo-13072972.jpeg" alt="Momo" class="rounded-lg w-full h-32 object-cover" />
-        <p class="item-name text-lg font-semibold">Momo</p>
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-32 object-cover" />
+        <div class="flex flex-row p-[5px] items-center">
+         <p class="item-name text-lg font-semibold">momo</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Steamed dumplings from the Himalayas.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>160</p>
       </div>
-      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
     </div>
 
     <!-- Card 4 -->
-    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-      <div class="space-y-2 max-w-[80%]">
-        <img src="https://images.pexels.com/photos/20408462/pexels-photo-20408462.jpeg" alt="Paratha" class="rounded-lg w-full h-32 object-cover" />
-        <p class="item-name text-lg font-semibold">Paratha</p>
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-100%]">
+        <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-32 object-cover" />
+        <div class="flex flex-row p-[5px] items-center">
+         <p class="item-name text-lg font-semibold">Paratha</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>        
         <p class="text-sm text-gray-600 dark:text-gray-400">Classic Indian flatbread.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>60</p>
       </div>
-      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
     </div>
 
     <!-- Card 5 -->
-    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-      <div class="space-y-2 max-w-[80%]">
-        <img src="https://images.pexels.com/photos/6133303/pexels-photo-6133303.jpeg" alt="Cake" class="rounded-lg w-full h-32 object-cover" />
-        <p class="item-name text-lg font-semibold">Desserts Cake</p>
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/cake.jpeg') }}" alt="Cake" class="rounded-lg w-full h-32 object-cover" />
+        <div class="flex flex-row p-[5px] items-center">
+         <p class="item-name text-lg font-semibold">Sweets</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Sweet dessert to finish your meal.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 100</p>
       </div>
-      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
     </div>
 
     <!-- Card 6 -->
-    <div class="ring ring-offset-1 item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
-      <div class="space-y-2 max-w-[80%]">
-        <img src="https://images.pexels.com/photos/1059943/pexels-photo-1059943.jpeg" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
-        <p class="item-name text-lg font-semibold">Fishfry</p>
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/fishfry.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
+        <div class="flex flex-row p-[5px] items-center">
+         <p class="item-name text-lg font-semibold">Fishfry</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 150</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 250</p>
       </div>
-      <button class="ml-4 mt-2 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-10 h-10 text-xl flex items-center justify-center">+</button>
+    </div>
+    <!-- card 7 -->
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/noodles.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
+        <div class="flex flex-row p-[5px] items-center">
+         <p class="item-name text-lg font-semibold">Noodles</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Noodles are a type of pasta made from unleavened dough, often served in soups or with sauces. </p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 180</p>
+      </div>
     </div>
 
+    <!-- card 8 -->
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-32 object-cover" />
+        <div class="flex flex-row p-[5px] items-center">
+         <p class="item-name text-lg font-semibold">Burger</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400">A juicy burger stacked to perfection.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>150</p>
+      </div>
+    </div>
+
+
+    <!-- card 9 -->
+     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/tea.jpg') }}" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
+        <div class="flex flex-row p-[5px] items-center">
+         <p class="item-name text-lg font-semibold">Tea</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Escape the ordinary with our exquisite selection of handcrafted teas, brewed to perfection for your enjoyment.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 80</p>
+      </div>
+    </div>
   </div>
 </div>
 
