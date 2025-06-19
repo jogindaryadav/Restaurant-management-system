@@ -81,10 +81,10 @@
   <div id="productGrid" class="grid grid-cols-3 gap-6">
     
     <!-- Card 1 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
-        <div class="flex flex-row p-[5px] items-center">
+        <div class="flex flex-row p-[5px] items-center justify-between">
          <p class="item-name text-lg font-semibold">Coffee</p>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
@@ -94,10 +94,10 @@
     </div>
 
     <!-- Card 2 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-32 object-cover" />
-        <div class="flex flex-row p-[5px] items-center">
+        <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-auto object-cover" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
          <p class="item-name text-lg font-semibold">Biryani</p>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
@@ -107,10 +107,10 @@
     </div>
 
     <!-- Card 3 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-32 object-cover" />
-        <div class="flex flex-row p-[5px] items-center">
+        <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-auto object-cover" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
          <p class="item-name text-lg font-semibold">momo</p>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
@@ -120,10 +120,10 @@
     </div>
 
     <!-- Card 4 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-100%]">
-        <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-32 object-cover" />
-        <div class="flex flex-row p-[5px] items-center">
+        <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-auto object-cover" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
          <p class="item-name text-lg font-semibold">Paratha</p>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>        
@@ -133,23 +133,35 @@
     </div>
 
     <!-- Card 5 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+    <!-- <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/cake.jpeg') }}" alt="Cake" class="rounded-lg w-full h-32 object-cover" />
-        <div class="flex flex-row p-[5px] items-center">
+        <img src="{{ asset('images/cake1.jpeg') }}" alt="Cake" class="rounded-lg w-full h-[30vh] object-cover" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
          <p class="item-name text-lg font-semibold">Sweets</p>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Sweet dessert to finish your meal.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 100</p>
       </div>
+    </div> -->
+
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
+         <p class="item-name text-lg font-semibold">Sweets</p>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 250</p>
+      </div>
     </div>
 
     <!-- Card 6 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/fishfry.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
-        <div class="flex flex-row p-[5px] items-center">
+        <img src="{{ asset('images/fishfry.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
          <p class="item-name text-lg font-semibold">Fishfry</p>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
@@ -158,10 +170,10 @@
       </div>
     </div>
     <!-- card 7 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/noodles.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
-        <div class="flex flex-row p-[5px] items-center">
+        <img src="{{ asset('images/noodles.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
          <p class="item-name text-lg font-semibold">Noodles</p>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
@@ -171,10 +183,10 @@
     </div>
 
     <!-- card 8 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-32 object-cover" />
-        <div class="flex flex-row p-[5px] items-center">
+        <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-auto object-cover" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
          <p class="item-name text-lg font-semibold">Burger</p>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
@@ -185,10 +197,10 @@
 
 
     <!-- card 9 -->
-     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4 flex items-start justify-between">
+     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/tea.jpg') }}" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
-        <div class="flex flex-row p-[5px] items-center">
+        <img src="{{ asset('images/tea.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
          <p class="item-name text-lg font-semibold">Tea</p>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
