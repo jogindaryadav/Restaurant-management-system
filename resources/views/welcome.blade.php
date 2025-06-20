@@ -9,9 +9,7 @@
 
     <!-- Image -->
     <div class="overflow-hidden rounded-2xl shadow-md">
-      <img src="https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg" 
-           alt="Restaurant Image" 
-           class="h-full w-full object-cover transition-transform duration-300 hover:scale-105" />
+      <img src="https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg" alt="Restaurant Image" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105" />
     </div>
 
     <!-- Info Section -->
@@ -83,9 +81,12 @@
     <!-- Card 1 -->
     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-32 object-cover" />
+        <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">Coffee</p>
+          <div class="items-center flex flex-row gap-3">
+           <p class="item-name text-lg font-semibold">Coffee</p>
+           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+          </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">A good day starts with a great cup of coffee.</p>
@@ -96,9 +97,12 @@
     <!-- Card 2 -->
     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-auto object-cover" />
+        <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">Biryani</p>
+          <div class="items-center flex flex-row gap-3">
+            <p class="item-name text-lg font-semibold">Biryani</p>
+            <div class="inline-block w-3 h-3 bg-red-500 rounded-sm"></div>
+          </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Aromatic rice blended with spices.</p>
@@ -109,9 +113,12 @@
     <!-- Card 3 -->
     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-auto object-cover" />
+        <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">momo</p>
+          <div class="items-center flex flex-row gap-3">
+           <p class="item-name text-lg font-semibold">Momo</p>
+           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+          </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Steamed dumplings from the Himalayas.</p>
@@ -122,9 +129,12 @@
     <!-- Card 4 -->
     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-100%]">
-        <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-auto object-cover" />
+        <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">Paratha</p>
+          <div class="items-center flex flex-row gap-3">
+           <p class="item-name text-lg font-semibold">Paratha</p>
+           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+          </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>        
         <p class="text-sm text-gray-600 dark:text-gray-400">Classic Indian flatbread.</p>
@@ -133,23 +143,14 @@
     </div>
 
     <!-- Card 5 -->
-    <!-- <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/cake1.jpeg') }}" alt="Cake" class="rounded-lg w-full h-[30vh] object-cover" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">Sweets</p>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
-        </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Sweet dessert to finish your meal.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 100</p>
-      </div>
-    </div> -->
-
     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover" />
+        <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">Sweets</p>
+          <div class="items-center flex flex-row gap-3">
+           <p class="item-name text-lg font-semibold">Sweets</p>
+           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+          </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
@@ -160,9 +161,12 @@
     <!-- Card 6 -->
     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/fishfry.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover" />
+        <img src="{{ asset('images/fish.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">Fishfry</p>
+          <div class="items-center flex flex-row gap-3">
+           <p class="item-name text-lg font-semibold">Fishfry</p>
+           <div class="inline-block w-3 h-3 bg-red-500 rounded-sm"></div>
+          </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
@@ -172,9 +176,12 @@
     <!-- card 7 -->
     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/noodles.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover" />
+        <img src="{{ asset('images/noodles.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">Noodles</p>
+          <div class="items-center flex flex-row gap-3">
+           <p class="item-name text-lg font-semibold">Noodels</p>
+           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+          </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Noodles are a type of pasta made from unleavened dough, often served in soups or with sauces. </p>
@@ -185,9 +192,12 @@
     <!-- card 8 -->
     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-auto object-cover" />
+        <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">Burger</p>
+          <div class="items-center flex flex-row gap-3">
+           <p class="item-name text-lg font-semibold">Burger</p>
+           <div class="inline-block w-3 h-3 bg-red-500 rounded-sm"></div>
+          </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">A juicy burger stacked to perfection.</p>
@@ -199,9 +209,12 @@
     <!-- card 9 -->
      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/tea.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover" />
+        <img src="{{ asset('images/tea.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
-         <p class="item-name text-lg font-semibold">Tea</p>
+          <div class="items-center flex flex-row gap-3">
+           <p class="item-name text-lg font-semibold">Tea</p>
+           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+          </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">Escape the ordinary with our exquisite selection of handcrafted teas, brewed to perfection for your enjoyment.</p>
