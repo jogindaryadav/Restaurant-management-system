@@ -238,12 +238,12 @@
       <span><i class="fa fa-usd"></i> 150</span>
     </div>item-name 
 
-    <div class="flex gap-2 border-b pb-4 mb-4">
-      <input type="text" placeholder="Enter coupon code" class="flex-1 px-3 py-2 text-black rounded-md border dark:border-gray-600" />
+    <!-- <div class="flex gap-2 border-b pb-2 mb-2">
+      <input type="text" placeholder="Enter coupon code" class="flex-1 px-2 py-1 text-black rounded-md border dark:border-gray-600" />
       <button class="bg-gray-700 text-white rounded-md px-4 py-2">
         <i class="fa fa-check"></i>
       </button>
-    </div>
+    </div> -->
 
     <div class="space-y-2 text-sm">
       <div class="flex justify-between">
