@@ -1,21 +1,3 @@
-// const searchInput = document.getElementById("searchInput");
-// const items = document.querySelectorAll(".item-card");
-
-// searchInput.addEventListener("input", function(){
-//     const searchTerm = this.value.toLowerCase();
-
-//     items.forEach(item =>{
-//         const itemName = item.querySelector('.item-Name').textContent.toLowerCase();
-//         if(itemName.include(searchTerm)){
-//             item.classList.remove("hidden");
-//         }
-//         else{
-//             item.classList.add("hidden");
-//         }
-
-//     });
-// });
-
 //login page
    let useGmail = false;
 
@@ -221,11 +203,11 @@
   });
 
   // hamburger
-  const menuToggle = document.getElementById("menuToggle");
-  const dropdownMenu = document.getElementById("dropdownMenu");
+  // const menuToggle = document.getElementById("menuToggle");
+  // const dropdownMenu = document.getElementById("dropdownMenu");
 
-  menuToggle.addEventListener("click", () => {
-    dropdownMenu.classList.toggle("hidden");
-    dropdownMenu.classList.toggle("flex");
-    dropdownMenu.classList.toggle("flex-col");
-  });
+  // menuToggle.addEventListener("click", () => {
+  //   dropdownMenu.classList.toggle("hidden");
+  //   dropdownMenu.classList.toggle("flex");
+  //   dropdownMenu.classList.toggle("flex-col");
+  // });

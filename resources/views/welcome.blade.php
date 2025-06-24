@@ -43,11 +43,10 @@
 </div>
 
 
-    <!-- item list section -->
-<div class="border-b border-gray-200 dark:border-gray-700 px-[7vw] py-6 bg-white dark:bg-black">
+<!-- item list section -->
+<div class="border-b border-gray-200 dark:border-gray-700 px-[4vw] sm:px-[7vw] py-6 bg-white dark:bg-black">
   <div class="flex items-center justify-between mb-4">
-    <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Browse Categories</h2>
-    <button class="text-sm text-[#e35f0e] font-medium hover:underline">View All</button>
+    <h2 class="text-md sm:text-2xl font-semibold text-gray-800 dark:text-white">Browse Categories</h2>
   </div>
 
   <ul class="custom-scroll flex gap-6 overflow-x-auto whitespace-nowrap text-base font-medium text-gray-700 dark:text-gray-200 scrollbar-thin scrollbar-thumb-[#e35f0e]/70 scrollbar-track-transparent">
@@ -65,37 +64,43 @@
     <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Rem Voluptas</a></li>
   </ul>
 </div>
-    <!-- menu_bar -->
-<div class="bg-white dark:bg-black px-[7vw] py-6 text-black dark:text-white flex flex-row gap-6">
-  <!-- Left: Product Menu -->
-<div class="w-2/3 mx-auto">
-  <!-- Search Bar -->
-  <div class="flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
-    <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
-    <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-lg dark:placeholder-gray-400" />
-  </div>
 
-  <!-- Product Grid -->
-  <div id="productGrid" class="grid grid-cols-3 gap-6">
+   <!-- Search Bar -->
+  <!-- <div class="hidden flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
+     <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
+     <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
+  </div> -->
+<!-- menu_bar -->
+<div class="bg-white dark:bg-black px-[4vw] sm:px-[7vw] py-6 text-black dark:text-white flex flex-row gap-4 md:gap-6">
+  <!-- Left: Product Menu -->
+  <div class="sm:w-2/3 w-1/2 md:mx-auto">
+   <!-- Search Bar -->
+    <div class="sm-block flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 mx-2 bg-white dark:bg-gray-900">
+     <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
+     <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
+    </div>
+
+   <!-- Product Grid -->
+    <div id="productGrid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
     
-    <!-- Card 1 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <!-- Card 1 -->
+      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
           <div class="items-center flex flex-row gap-3">
-           <p class="item-name text-lg font-semibold">Coffee</p>
-           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+            <p class="item-name text-lg font-semibold">Coffee</p>
+            <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
           </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">A good day starts with a great cup of coffee.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 120</p>
       </div>
-    </div>
+      </div>
 
-    <!-- Card 2 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <!-- Card 2 -->
+      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -108,10 +113,10 @@
         <p class="text-sm text-gray-600 dark:text-gray-400">Aromatic rice blended with spices.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>100</p>
       </div>
-    </div>
+      </div>
 
-    <!-- Card 3 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <!-- Card 3 -->
+      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -124,10 +129,10 @@
         <p class="text-sm text-gray-600 dark:text-gray-400">Steamed dumplings from the Himalayas.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>160</p>
       </div>
-    </div>
+      </div>
 
-    <!-- Card 4 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <!-- Card 4 -->
+      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-100%]">
         <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -140,10 +145,10 @@
         <p class="text-sm text-gray-600 dark:text-gray-400">Classic Indian flatbread.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>60</p>
       </div>
-    </div>
+      </div>
 
-    <!-- Card 5 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <!-- Card 5 -->
+      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -156,10 +161,10 @@
         <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 250</p>
       </div>
-    </div>
+      </div>
 
-    <!-- Card 6 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <!-- Card 6 -->
+      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/fish.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -172,9 +177,9 @@
         <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 250</p>
       </div>
-    </div>
-    <!-- card 7 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      </div>
+      <!-- card 7 -->
+      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/noodles.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -184,13 +189,13 @@
           </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Noodles are a type of pasta made from unleavened dough, often served in soups or with sauces. </p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Noodles are a type of pasta made from unleavened dough. </p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 180</p>
       </div>
-    </div>
+      </div>
 
-    <!-- card 8 -->
-    <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <!-- card 8 -->
+      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -203,11 +208,10 @@
         <p class="text-sm text-gray-600 dark:text-gray-400">A juicy burger stacked to perfection.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>150</p>
       </div>
-    </div>
+      </div>
 
-
-    <!-- card 9 -->
-     <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <!-- card 9 -->
+      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/tea.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -217,16 +221,16 @@
           </div>
          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Escape the ordinary with our exquisite selection of handcrafted teas, brewed to perfection for your enjoyment.</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Escape the ordinary with our exquisite selection of handcrafted teas.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 80</p>
+      </div>
       </div>
     </div>
   </div>
-</div>
 
 
   <!-- Right: Basket Sidebar -->
-  <div class="w-1/3 h-fit bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl p-6">
+  <div class="w-1/2 sm:w-1/3 h-fit bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl p-6">
     <h2 class="text-xl font-semibold mb-4">Basket</h2>
 
     <div class="flex justify-between items-center mb-4">
@@ -265,6 +269,5 @@
     </button>
   </div>
 </div>
-
 </div>
 @endsection

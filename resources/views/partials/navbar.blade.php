@@ -5,23 +5,23 @@
         </div>
 
         <div class="flex flex-row gap-3">
-            <button id="menuToggle" class="sm:hidden text-3xl text-black dark:text-white focus:outline-none">
+            <button id="menuToggle" class="sm:hidden block text-3xl text-black dark:text-white focus:outline-none">
              &#9776;
             </button>
 
             <!-- Menu List -->
-            <ul id="menu" class="hidden sm:flex sm:flex-row sm:gap-6 text-black dark:text-white absolute sm:static top-full right-4 sm:right-auto bg-white dark:bg-gray-800 sm:bg-transparent sm:shadow-none shadow-lg rounded-md p-4 sm:p-0 z-50 flex-col">
+            <ul id="menu" class="sm:flex sm:flex-row sm:gap- text-black dark:text-white absolute sm:static top-full right-4 sm:right-auto 00 sm:bg-transparent sm:shadow-none shadow-lg bg-gray-200 dark:bg-black">
                 <li class="hover:text-[#e35f0e]">
-                    <a href="{{ route('welcome') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 sm:hover:bg-transparent">View Menu</a>
+                    <a href="{{ route('welcome') }}" class=" px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 sm:hover:bg-transparent">View Menu</a>
                 </li>
                 <li class="hover:text-[#e35f0e]">
-                    <a href="{{ route('reservation') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 sm:hover:bg-transparent">Reservation</a>
+                    <a href="{{ route('reservation') }}" class=" px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 sm:hover:bg-transparent">Reservation</a>
                 </li>
                 <li class="hover:text-[#e35f0e]">
-                    <a href="{{ route('login') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 sm:hover:bg-transparent"><i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i>Login</a>
+                    <a href="{{ route('login') }}" class=" px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 sm:hover:bg-transparent"><i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i>Login</a>
                 </li>
                 <li class="hover:text-[#e35f0e]">
-                    <a href="{{ route('register') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 sm:hover:bg-transparent">Register</a>
+                    <a href="{{ route('register') }}" class=" px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 sm:hover:bg-transparent">Register</a>
                 </li>
             </ul>
             <button id="darkToggle" class="border p-1 rounded-full">
