@@ -1,7 +1,7 @@
 <div class="sticky top-0 bg-white dark:bg-black">
-    <div class="flex flex-row justify-between border-b-[1px] items-center px-[6vw] py-2">
+    <div class="flex flex-row justify-between border-b-[1px] items-center px-[4vw] sm:px-[6vw] py-1">
         <div>
-        <img src="https://images.pexels.com/photos/1858115/pexels-photo-1858115.jpeg" alt="logo" class="rounded-full w-[2vw] h-[2vw] ring-offset-2 ring">
+        <img src="https://images.pexels.com/photos/1858115/pexels-photo-1858115.jpeg" alt="logo" class="rounded-full w-[6vw] h-[6vw] sm:w-[4vw] sm:h-[4vw] ring-offset-1 sm:ring-offset-2 ring">
         </div>
 
         <div class="flex flex-row gap-3">
