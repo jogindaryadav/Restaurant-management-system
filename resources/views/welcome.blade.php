@@ -66,18 +66,22 @@
 </div>
 
    <!-- Search Bar -->
-  <!-- <div class="hidden flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
-     <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
-     <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
-  </div> -->
+    <div class="sm:hidden block">
+      <div class="flex items-center mx-[3vw] my-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
+        <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
+        <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
+      </div>
+    </div>
 <!-- menu_bar -->
 <div class="bg-white dark:bg-black px-[4vw] sm:px-[7vw] py-6 text-black dark:text-white flex flex-row gap-4 md:gap-6">
   <!-- Left: Product Menu -->
   <div class="sm:w-2/3 w-1/2 md:mx-auto">
    <!-- Search Bar -->
-    <div class="sm-block flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 mx-2 bg-white dark:bg-gray-900">
-     <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
-     <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
+    <div class="hidden sm:block">
+      <div class="flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 mx-2 bg-white dark:bg-gray-900">
+        <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
+        <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
+      </div>
     </div>
 
    <!-- Product Grid -->
