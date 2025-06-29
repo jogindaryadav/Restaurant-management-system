@@ -35,7 +35,7 @@
       document.getElementById('forgot-box').classList.add('hidden');
     }
 
-    function sendOTP() {
+    function sendMobileOTP() {
       const mobile = document.getElementById('resetMobile').value;
       if (!mobile) {
         alert("Please enter your mobile number.");
@@ -66,7 +66,7 @@
     }
     // js code for register page
     
-    function sendOTP() {
+    function sendEmailOTP() {
       const email = document.getElementById("email").value.trim();
       if (!email.endsWith("@gmail.com")) {
         alert("Only Gmail addresses are allowed.");

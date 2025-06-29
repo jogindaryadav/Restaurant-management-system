@@ -10,7 +10,7 @@
             </button>
 
             <!-- Menu List -->
-            <ul id="menu" class="sm:flex sm:flex-row sm:gap- text-black dark:text-white absolute sm:static top-full right-4 sm:right-auto 00 sm:bg-transparent sm:shadow-none shadow-lg bg-gray-200 dark:bg-black">
+            <ul id="menu" class="hidden sm:flex sm:flex-row sm:gap- text-black dark:text-white absolute sm:static top-full right-4 sm:right-auto 00 sm:bg-transparent sm:shadow-none shadow-lg bg-gray-200 dark:bg-black">
                 <li class="hover:text-[#e35f0e]">
                     <a href="{{ route('welcome') }}" class=" px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 sm:hover:bg-transparent">View Menu</a>
                 </li>
@@ -37,3 +37,11 @@
         </div>
     </div>    
 </div>
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>

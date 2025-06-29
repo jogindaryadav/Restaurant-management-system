@@ -32,7 +32,7 @@
       <input type="text" id="resetMobile" placeholder="Enter Mobile Number"
         class="w-full px-4 py-2 border rounded-lg mb-3 focus:outline-none focus:ring focus:border-blue-300">
 
-      <button onclick="sendOTP()"
+      <button onclick="sendMobileOTP()"
         class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition mb-3">Send OTP</button>
 
       <input type="text" id="otp" placeholder="Enter OTP"

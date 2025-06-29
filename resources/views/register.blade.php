@@ -14,7 +14,7 @@
       <label for="email" class="block text-sm font-medium mb-2">Gmail Address</label>
       <input type="email" id="email" class="w-full p-2 border rounded mb-4" placeholder="you@gmail.com" required />
 
-      <button onclick="sendOTP()" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+      <button onclick="sendEmailOTP()" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
         Send OTP
       </button>
 

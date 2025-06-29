@@ -67,7 +67,7 @@
     <div class="sm:hidden block">
       <div class="flex items-center mx-[3vw] my-4 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 bg-white dark:bg-gray-900">
         <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
-        <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
+        <input type="text" placeholder="Search menu items" id="searchInputSm" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
       </div>
     </div>
 <!-- menu_bar -->
@@ -78,7 +78,7 @@
     <div class="hidden sm:block">
       <div class="flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 mx-2 bg-white dark:bg-gray-900">
         <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
-        <input type="text" placeholder="Search menu items" id="searchInput" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
+        <input type="text" placeholder="Search menu items" id="searchInputLg" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
       </div>
     </div>
 
@@ -265,4 +265,31 @@
   </div>
 </div>
 </div>
+<script>
+    const searchInputSm = document.getElementById('searchInputSm');
+    const searchInputLg = document.getElementById('searchInputLg');
+    const productGrid = document.getElementById('productGrid');
+    const itemCards = productGrid.getElementsByClassName('item-card');
+
+    const filterItems = (searchTerm) => {
+        const term = searchTerm.toLowerCase();
+        for (let i = 0; i < itemCards.length; i++) {
+            const itemCard = itemCards[i];
+            const itemName = itemCard.getElementsByClassName('item-name')[0].textContent.toLowerCase();
+            if (itemName.includes(term)) {
+                itemCard.style.display = 'block';
+            } else {
+                itemCard.style.display = 'none';
+            }
+        }
+    };
+
+    searchInputSm.addEventListener('keyup', (event) => {
+        filterItems(event.target.value);
+    });
+
+    searchInputLg.addEventListener('keyup', (event) => {
+        filterItems(event.target.value);
+    });
+</script>
 @endsection
