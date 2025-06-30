@@ -1,4 +1,3 @@
-import './bootstrap';
 document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('darkToggle');
     const html = document.documentElement;
@@ -34,18 +33,3 @@ document.addEventListener('DOMContentLoaded', () => {
         updateIcons();
     });
 });
-
-  const picker = new Litepicker({
-    element: document.getElementById('dateRange'),
-    singleMode: false,
-    format: 'DD MMM, YYYY',
-    numberOfMonths: 2,
-    numberOfColumns: 2,
-    autoApply: true,
-    dropdowns: {
-      minYear: 2025,
-      maxYear: null,
-      months: true,
-      years: true
-    }
-  });
