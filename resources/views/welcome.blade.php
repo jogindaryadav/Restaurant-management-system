@@ -50,16 +50,14 @@
   </div>
 
   <ul class="custom-scroll flex gap-2 sm:gap-6 overflow-x-auto whitespace-nowrap text-base font-medium text-gray-700 dark:text-gray-200 scrollbar-thin scrollbar-thumb-[#e35f0e]/70 scrollbar-track-transparent">
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full bg-[#e35f0e]/10 text-[#e35f0e] hover:bg-[#e35f0e]/20 transition">All Categories</a></li>
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Appetizer</a></li>
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Specials</a></li>
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Salads</a></li>
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Seafoods</a></li>
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Traditional</a></li>
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Main Courses</a></li>
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Desserts</a></li>
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Drinks</a></li>
-    <li><a href="#" class="inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Rem Voluptas</a></li>
+    <li data-category="all"><a href="#" class="category-link inline-block px-4 py-2 rounded-full bg-[#e35f0e]/10 text-[#e35f0e] hover:bg-[#e35f0e]/20 transition">All Categories</a></li>
+    <li data-category="appetizer"><a href="#" class="category-link inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Appetizer</a></li>
+    <li data-category="specials"><a href="#" class="category-link inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Specials</a></li>
+    <li data-category="salads"><a href="#" class="category-link inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Salads</a></li>
+    <li data-category="seafoods"><a href="#" class="category-link inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Seafoods</a></li>
+    <li data-category="traditional"><a href="#" class="category-link inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Traditional</a></li>
+    <li data-category="desserts"><a href="#" class="category-link inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Desserts</a></li>
+    <li data-category="drinks"><a href="#" class="category-link inline-block px-4 py-2 rounded-full hover:bg-[#e35f0e]/20 transition">Drinks</a></li>
   </ul>
 </div>
 
@@ -86,7 +84,7 @@
     <div id="productGrid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
     
       <!-- Card 1 -->
-      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -102,7 +100,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="traditional" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -118,7 +116,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="specials" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -134,7 +132,7 @@
       </div>
 
       <!-- Card 4 -->
-      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="traditional" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-100%]">
         <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -150,7 +148,7 @@
       </div>
 
       <!-- Card 5 -->
-      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="desserts" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -166,7 +164,7 @@
       </div>
 
       <!-- Card 6 -->
-      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="seafoods" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/fish.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -181,7 +179,7 @@
       </div>
       </div>
       <!-- card 7 -->
-      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="appetizer" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/noodles.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -197,7 +195,7 @@
       </div>
 
       <!-- card 8 -->
-      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="specials" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -213,7 +211,7 @@
       </div>
 
       <!-- card 9 -->
-      <div class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
       <div class="space-y-2 max-w-[100%]">
         <img src="{{ asset('images/tea.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
         <div class="flex flex-row p-[5px] items-center justify-between">
@@ -226,6 +224,84 @@
         <p class="text-sm text-gray-600 dark:text-gray-400">Escape the ordinary with our exquisite selection of handcrafted teas.</p>
         <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 80</p>
       </div>
+      </div>
+      <!-- card 10 -->
+      <div data-category="drinks" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div class="space-y-2 max-w-[100%]">
+        <img src="{{ asset('images/juice.jpg') }}" alt="juice" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+        <div class="flex flex-row p-[5px] items-center justify-between">
+          <div class="items-center flex flex-row gap-3">
+           <p class="item-name text-lg font-semibold">Juice</p>
+           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+          </div>
+         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-400">The juice which contain flavour to make your day sweet.</p>
+        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 120</p>
+      </div>
+      </div>
+      <!-- Card 11 -->
+       <div data-category="salads" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between" style="display: none;">
+        <div class="space-y-2 max-w-[100%]">
+            <img src="{{ asset('images/caesar-salad.jpg') }}" alt="Caesar Salad" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+            <div class="flex flex-row p-[5px] items-center justify-between">
+                <div class="items-center flex flex-row gap-3">
+                  <p class="item-name text-lg font-semibold">Caesar Salad</p>
+                  <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+                </div>
+                <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Classic Caesar salad with grilled chicken.</p>
+            <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 180</p>
+        </div>
+       </div>
+
+     <!-- Card 12 -->
+     <div data-category="desserts" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between" style="display: none;">
+        <div class="space-y-2 max-w-[100%]">
+            <img src="{{ asset('images/puff.jpg') }}" alt="Puff Pastry" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+            <div class="flex flex-row p-[5px] items-center justify-between">
+                <div class="items-center flex flex-row gap-3">
+                    <p class="item-name text-lg font-semibold">Puff Pastry</p>
+                    <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+                </div>
+                <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Light and flaky puff pastry with a sweet filling.</p>
+            <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 90</p>
+        </div>
+     </div>
+     
+     <!-- card 13 -->
+      <div data-category="drinks" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between" style="display: none;">
+        <div class="space-y-2 max-w-[100%]">
+            <img src="{{ asset('images/redbull.jpg') }}" alt="Caesar Salad" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+            <div class="flex flex-row p-[5px] items-center justify-between">
+                <div class="items-center flex flex-row gap-3">
+                  <p class="item-name text-lg font-semibold">Red Bull</p>
+                  <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+                </div>
+                <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Classic Caesar salad with grilled chicken.</p>
+            <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 120</p>
+        </div>
+      </div>
+
+      <!-- card 14 -->
+      <div data-category="drinks" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between" style="display: none;">
+        <div class="space-y-2 max-w-[100%]">
+            <img src="{{ asset('images/cocacola.jpg') }}" alt="Caesar Salad" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+            <div class="flex flex-row p-[5px] items-center justify-between">
+                <div class="items-center flex flex-row gap-3">
+                  <p class="item-name text-lg font-semibold">Coca cola</p>
+                  <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+                </div>
+                <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Classic Caesar salad with grilled chicken.</p>
+            <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 80</p>
+        </div>
       </div>
     </div>
   </div>
@@ -266,30 +342,62 @@
 </div>
 </div>
 <script>
-    const searchInputSm = document.getElementById('searchInputSm');
-    const searchInputLg = document.getElementById('searchInputLg');
-    const productGrid = document.getElementById('productGrid');
-    const itemCards = productGrid.getElementsByClassName('item-card');
+    document.addEventListener('DOMContentLoaded', function () {
+        const categoryLinks = document.querySelectorAll('.category-link');
+        const itemCards = document.querySelectorAll('.item-card');
+        const searchInputSm = document.getElementById('searchInputSm');
+        const searchInputLg = document.getElementById('searchInputLg');
 
-    const filterItems = (searchTerm) => {
-        const term = searchTerm.toLowerCase();
-        for (let i = 0; i < itemCards.length; i++) {
-            const itemCard = itemCards[i];
-            const itemName = itemCard.getElementsByClassName('item-name')[0].textContent.toLowerCase();
-            if (itemName.includes(term)) {
-                itemCard.style.display = 'block';
-            } else {
-                itemCard.style.display = 'none';
-            }
-        }
-    };
+        // Function to filter items based on category
+        const filterByCategory = (category) => {
+            itemCards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    if (card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        };
 
-    searchInputSm.addEventListener('keyup', (event) => {
-        filterItems(event.target.value);
-    });
+        // Function to filter items based on search input
+        const filterBySearch = (searchTerm) => {
+            const term = searchTerm.toLowerCase();
+            itemCards.forEach(card => {
+                const itemName = card.querySelector('.item-name').textContent.toLowerCase();
+                if (itemName.includes(term)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        };
 
-    searchInputLg.addEventListener('keyup', (event) => {
-        filterItems(event.target.value);
+        // Event listeners for category links
+        categoryLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const category = this.parentElement.dataset.category;
+
+                // Toggle active class on category links
+                categoryLinks.forEach(link => link.classList.remove('bg-[#e35f0e]/10', 'text-[#e35f0e]'));
+                this.classList.add('bg-[#e35f0e]/10', 'text-[#e35f0e]');
+
+                filterByCategory(category);
+            });
+        });
+
+        // Event listeners for search inputs
+        searchInputSm.addEventListener('keyup', (event) => {
+            filterBySearch(event.target.value);
+        });
+
+        searchInputLg.addEventListener('keyup', (event) => {
+            filterBySearch(event.target.value);
+        });
     });
 </script>
 @endsection
