@@ -3,42 +3,41 @@
 @section('content')
 <div class="bg-white dark:bg-black text-black">
 
-    <!-- hero-section -->
+  <!-- hero-section -->
   <div class="px-[3vw] sm:px-[7vw] py-[3vh] sm:py-[6vh] border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-black text-black dark:text-white">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-10 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 sm:gap-10 items-center">
+      <!-- Image left -->
+       <div class="overflow-hidden rounded-2xl shadow-md">
+        <img src="https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg" alt="Restaurant Image" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105" />
+       </div>
 
-    <!-- Image -->
-    <div class="overflow-hidden rounded-2xl shadow-md">
-      <img src="https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg" alt="Restaurant Image" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105" />
+     <!-- Info Section -->
+      <div class="md:col-span-2 flex flex-col justify-between gap-3 sm:gap-6">
+        <div class="flex flex-col gap-1">
+          <h2 class="text-xl sm:text-3xl font-extrabold tracking-tight">Unique Kitchen</h2>
+          <p class="text-sm text-green-500 font-medium">Open Now 
+            <a href="#" class="text-sm text-gray-500 hover:text-[#e35f0e] underline ml-2">More info</a>
+          </p>
+          <p class="text-base text-gray-600 dark:text-gray-300">Bhairahawa, Rupandehi</p>
+        </div>
+
+        <!-- Rating -->
+        <div class="flex items-center space-x-1 text-yellow-400">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <a href="#" class="text-sm text-[#e35f0e] underline ml-2">(2) Reviews</a>
+        </div>
+
+        <!-- Delivery Info -->
+        <div class="ring ring-offset-2 mt-2 sm:mt-4 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-3 text-sm flex items-center justify-between gap-2 max-w-sm">
+          <span><i class="fa fa-clock-o mr-2"></i>Delivery in <strong>15 min</strong></span>
+          <a href="#" class="text-[#e35f0e] underline hover:text-orange-600 transition">Change</a>
+        </div>
+      </div>
     </div>
-
-    <!-- Info Section -->
-    <div class="md:col-span-2 flex flex-col justify-between gap-3 sm:gap-6">
-      <div class="flex flex-col gap-1">
-        <h2 class="text-xl sm:text-3xl font-extrabold tracking-tight">Unique Kitchen</h2>
-        <p class="text-sm text-green-500 font-medium">Open Now 
-          <a href="#" class="text-sm text-gray-500 hover:text-[#e35f0e] underline ml-2">More info</a>
-        </p>
-        <p class="text-base text-gray-600 dark:text-gray-300">Bhairahawa, Rupandehi</p>
-      </div>
-
-      <!-- Rating -->
-      <div class="flex items-center space-x-1 text-yellow-400">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-o"></i>
-        <i class="fa fa-star-o"></i>
-        <i class="fa fa-star-o"></i>
-        <a href="#" class="text-sm text-[#e35f0e] underline ml-2">(2) Reviews</a>
-      </div>
-
-      <!-- Delivery Info -->
-      <div class="ring ring-offset-2 mt-2 sm:mt-4 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-3 text-sm flex items-center justify-between max-w-sm">
-        <span><i class="fa fa-clock-o mr-2"></i>Delivery in <strong>15 min</strong></span>
-        <a href="#" class="text-[#e35f0e] underline hover:text-orange-600 transition">Change</a>
-      </div>
-    </div>
-
   </div>
 </div>
 
@@ -69,7 +68,7 @@
       </div>
     </div>
 <!-- menu_bar -->
-<div class="bg-white dark:bg-black px-[4vw] sm:px-[7vw] sm:py-6 py-1 text-black dark:text-white flex flex-col sm:flex-row gap-4 md:gap-6">
+<div class="bg-white dark:bg-black px-[4vw] sm:px-[7vw] sm:py-6 py-3 text-black dark:text-white flex flex-col sm:flex-row gap-4 md:gap-6">
   <!-- Left: Product Menu -->
   <div class="order-last sm:order-1 sm:w-2/3 w-fully md:mx-auto">
    <!-- Search Bar -->
@@ -85,163 +84,163 @@
     
       <!-- Card 1 -->
       <div data-category="drinks" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-            <p class="item-name text-lg font-semibold">Coffee</p>
-            <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+        <div class="space-y-2 max-w-[100%]">
+          <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+              <p class="item-name text-lg font-semibold">Coffee</p>
+              <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+            </div>
+            <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
           </div>
-          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <p class="text-sm text-gray-600 dark:text-gray-400">A good day starts with a great cup of coffee.</p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 120</p>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">A good day starts with a great cup of coffee.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 120</p>
-      </div>
       </div>
 
       <!-- Card 2 -->
       <div data-category="traditional" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-            <p class="item-name text-lg font-semibold">Biryani</p>
-            <div class="inline-block w-3 h-3 bg-red-500 rounded-sm"></div>
+        <div class="space-y-2 max-w-[100%]">
+          <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+              <p class="item-name text-lg font-semibold">Biryani</p>
+              <div class="inline-block w-3 h-3 bg-red-500 rounded-sm"></div>
+            </div>
+           <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
           </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Aromatic rice blended with spices.</p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>100</p>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Aromatic rice blended with spices.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>100</p>
-      </div>
       </div>
 
       <!-- Card 3 -->
       <div data-category="specials" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-           <p class="item-name text-lg font-semibold">Momo</p>
-           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+        <div class="space-y-2 max-w-[100%]">
+          <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+             <p class="item-name text-lg font-semibold">Momo</p>
+             <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+            </div>
+           <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
           </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Steamed dumplings from the Himalayas.</p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>160</p>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Steamed dumplings from the Himalayas.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>160</p>
-      </div>
       </div>
 
       <!-- Card 4 -->
       <div data-category="traditional" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-100%]">
-        <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-           <p class="item-name text-lg font-semibold">Paratha</p>
-           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
-          </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
-        </div>        
-        <p class="text-sm text-gray-600 dark:text-gray-400">Classic Indian flatbread.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>60</p>
-      </div>
+        <div class="space-y-2 max-w-100%]">
+          <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+             <p class="item-name text-lg font-semibold">Paratha</p>
+             <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+            </div>
+           <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          </div>        
+          <p class="text-sm text-gray-600 dark:text-gray-400">Classic Indian flatbread.</p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>60</p>
+        </div>
       </div>
 
       <!-- Card 5 -->
       <div data-category="desserts" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-           <p class="item-name text-lg font-semibold">Sweets</p>
-           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+        <div class="space-y-2 max-w-[100%]">
+          <img src="{{ asset('images/coffee.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+             <p class="item-name text-lg font-semibold">Sweets</p>
+             <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+            </div>
+           <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
           </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 250</p>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 250</p>
-      </div>
       </div>
 
       <!-- Card 6 -->
       <div data-category="seafoods" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/fish.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-           <p class="item-name text-lg font-semibold">Fishfry</p>
-           <div class="inline-block w-3 h-3 bg-red-500 rounded-sm"></div>
+        <div class="space-y-2 max-w-[100%]">
+          <img src="{{ asset('images/fish.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+            <p class="item-name text-lg font-semibold">Fishfry</p>
+            <div class="inline-block w-3 h-3 bg-red-500 rounded-sm"></div>
+            </div>
+          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
           </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 250</p>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Spicy catfish curry over rice.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 250</p>
-      </div>
       </div>
       <!-- card 7 -->
       <div data-category="appetizer" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/noodles.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-           <p class="item-name text-lg font-semibold">Noodels</p>
-           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+        <div class="space-y-2 max-w-[100%]">
+          <img src="{{ asset('images/noodles.jpeg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+            <p class="item-name text-lg font-semibold">Noodels</p>
+            <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+            </div>
+          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
           </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Noodles are a type of pasta made from unleavened dough. </p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 180</p>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Noodles are a type of pasta made from unleavened dough. </p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 180</p>
-      </div>
       </div>
 
       <!-- card 8 -->
       <div data-category="specials" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-           <p class="item-name text-lg font-semibold">Burger</p>
-           <div class="inline-block w-3 h-3 bg-red-500 rounded-sm"></div>
+        <div class="space-y-2 max-w-[100%]">
+          <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+            <p class="item-name text-lg font-semibold">Burger</p>
+            <div class="inline-block w-3 h-3 bg-red-500 rounded-sm"></div>
+            </div>
+          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
           </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <p class="text-sm text-gray-600 dark:text-gray-400">A juicy burger stacked to perfection.</p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>150</p>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">A juicy burger stacked to perfection.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i>150</p>
-      </div>
       </div>
 
       <!-- card 9 -->
       <div data-category="drinks" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/tea.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-           <p class="item-name text-lg font-semibold">Tea</p>
-           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+        <div class="space-y-2 max-w-[100%]">
+          <img src="{{ asset('images/tea.jpg') }}" alt="Catfish" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+            <p class="item-name text-lg font-semibold">Tea</p>
+            <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+            </div>
+          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
           </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Escape the ordinary with our exquisite selection of handcrafted teas.</p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 80</p>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Escape the ordinary with our exquisite selection of handcrafted teas.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 80</p>
-      </div>
       </div>
       <!-- card 10 -->
-      <div data-category="drinks" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
-      <div class="space-y-2 max-w-[100%]">
-        <img src="{{ asset('images/juice.jpg') }}" alt="juice" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
-        <div class="flex flex-row p-[5px] items-center justify-between">
-          <div class="items-center flex flex-row gap-3">
-           <p class="item-name text-lg font-semibold">Juice</p>
-           <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+      <div data-category="drinks" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between" style="display: none;">
+        <div class="space-y-2 max-w-[100%]">
+          <img src="{{ asset('images/juice.jpg') }}" alt="juice" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
+          <div class="flex flex-row p-[5px] items-center justify-between">
+            <div class="items-center flex flex-row gap-3">
+            <p class="item-name text-lg font-semibold">Juice</p>
+            <div class="inline-block w-3 h-3 bg-green-400 rounded-sm"></div>
+            </div>
+          <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
           </div>
-         <button class="ml-4 mt-1 text-white bg-[#e35f0e] hover:bg-[#f76f3e] rounded-full w-8 h-8 text-md flex items-center justify-center">+</button>
+          <p class="text-sm text-gray-600 dark:text-gray-400">The juice which contain flavour to make your day sweet.</p>
+          <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 120</p>
         </div>
-        <p class="text-sm text-gray-600 dark:text-gray-400">The juice which contain flavour to make your day sweet.</p>
-        <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 120</p>
-      </div>
       </div>
       <!-- Card 11 -->
-       <div data-category="salads" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between" style="display: none;">
+      <div data-category="salads" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between" style="display: none;">
         <div class="space-y-2 max-w-[100%]">
             <img src="{{ asset('images/caesar-salad.jpg') }}" alt="Caesar Salad" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row p-[5px] items-center justify-between">
@@ -254,9 +253,9 @@
             <p class="text-sm text-gray-600 dark:text-gray-400">Classic Caesar salad with grilled chicken.</p>
             <p class="text-orange-600 font-medium"><i class="fa fa-usd"></i> 180</p>
         </div>
-       </div>
+      </div>
 
-     <!-- Card 12 -->
+      <!-- Card 12 -->
      <div data-category="desserts" class="ring ring-offset-1 ring-offset-black dark:ring-offset-white item-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between" style="display: none;">
         <div class="space-y-2 max-w-[100%]">
             <img src="{{ asset('images/puff.jpg') }}" alt="Puff Pastry" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
@@ -340,6 +339,9 @@
     </button>
   </div>
 </div>
+<button onclick="topFunction()" id="myBtn" class="hidden fixed bottom-5 right-7 z-[99] border-none outline-none bg-orange-600 text-white cursor-pointer px-4 py-3 rounded-[10px] text-md">
+ Top
+</button>
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -399,5 +401,20 @@
             filterBySearch(event.target.value);
         });
     });
+
+let mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.documentElement.scrollTop= 0;
+}
 </script>
 @endsection
