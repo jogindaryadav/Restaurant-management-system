@@ -10,14 +10,14 @@
   }
 
   .custom-scroll::-webkit-scrollbar-thumb {
-    background-color: #e35f0e; /* thumb matches your theme */
+    background-color: #4169E1; /* thumb matches your theme */
     border-radius: 9999px;
   }
 
   /* Firefox */
   .custom-scroll {
     scrollbar-width: thin;
-    scrollbar-color: #e35f0e transparent;
+    scrollbar-color: #4169E1 transparent;
   }
 
   
