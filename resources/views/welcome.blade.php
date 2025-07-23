@@ -83,7 +83,7 @@
     <div id="productGrid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
     
       <!-- Card 1 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/coffee.jpg') }}" alt="Coffee" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -99,7 +99,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div data-category="traditional" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="traditional" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -115,7 +115,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div data-category="specials" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="specials" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -131,7 +131,7 @@
       </div>
 
       <!-- Card 4 -->
-      <div data-category="traditional" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="traditional" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -147,7 +147,7 @@
       </div>
 
       <!-- Card 5 -->
-      <div data-category="desserts" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="desserts" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/sweets.jpg') }}" alt="Sweets" class="rounded-lg w-full h-40 object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -163,7 +163,7 @@
       </div>
 
       <!-- Card 6 -->
-      <div data-category="seafoods" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="seafoods" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/fish.jpeg') }}" alt="Fishfry" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -178,7 +178,7 @@
         </div>
       </div>
       <!-- card 7 -->
-      <div data-category="appetizer" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="appetizer" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/noodles.jpeg') }}" alt="Noodles" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -194,7 +194,7 @@
       </div>
 
       <!-- card 8 -->
-      <div data-category="specials" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="specials" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -210,7 +210,7 @@
       </div>
 
       <!-- card 9 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/tea.jpg') }}" alt="Tea" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -225,7 +225,7 @@
         </div>
       </div>
       <!-- card 10 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/juice.jpg') }}" alt="juice" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -240,7 +240,7 @@
         </div>
       </div>
       <!-- Card 11 -->
-      <div data-category="salads" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="salads" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
             <img src="{{ asset('images/caesar-salad.jpg') }}" alt="Caesar Salad" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row p-[5px] items-center justify-between">
@@ -256,7 +256,7 @@
       </div>
 
       <!-- Card 12 -->
-     <div data-category="desserts" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+     <div data-category="desserts" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
             <img src="{{ asset('images/puff.jpg') }}" alt="Puff Pastry" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row p-[5px] items-center justify-between">
@@ -272,7 +272,7 @@
      </div>
      
      <!-- card 13 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
             <img src="{{ asset('images/redbull.jpg') }}" alt="Red Bull" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row p-[5px] items-center justify-between">
@@ -288,7 +288,7 @@
       </div>
 
       <!-- card 14 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-300 ring ring-offset-2 rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
             <img src="{{ asset('images/cocacola.jpg') }}" alt="Coca cola" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row p-[5px] items-center justify-between">
