@@ -32,7 +32,7 @@
         </div>
 
         <!-- Delivery Info -->
-        <div class="ring ring-offset-2 mt-2 sm:mt-4 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-3 text-sm flex items-center justify-between gap-2 max-w-sm">
+        <div class="ring ring-offset-2 mt-2 sm:mt-4 border border-gray-300 dark:border-royal-blue rounded-lg px-4 py-3 text-sm flex items-center justify-between gap-2 max-w-sm">
           <span><i class="fa fa-clock-o mr-2"></i>Delivery in <strong>15 min</strong></span>
           <a href="#" class="text-royal-blue underline hover:text-royal-blue-light transition">Change</a>
         </div>
@@ -43,7 +43,7 @@
 
 
 <!-- item list section -->
-<div class="border-b border-gray-200 dark:border-gray-700 px-[4vw] sm:px-[7vw] py-6 bg-off-white dark:bg-charcoal">
+<div class="border-b border-gray-200 dark:border-royal-blue px-[4vw] sm:px-[7vw] py-6 bg-off-white dark:bg-charcoal">
   <div class="flex items-center justify-between mb-4">
     <h2 class="text-md sm:text-2xl font-semibold text-charcoal dark:text-off-white">Browse Categories</h2>
   </div>
@@ -62,7 +62,7 @@
 
    <!-- Search Bar for small screen -->
     <div class="sm:hidden block">
-      <div class="flex items-center mx-[3vw] my-4 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 bg-off-white dark:bg-charcoal">
+      <div class="flex items-center mx-[3vw] my-4 border border-gray-300 dark:border-royal-blue rounded-xl px-4 py-2 bg-off-white dark:bg-charcoal">
         <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
         <input type="text" placeholder="Search menu items" id="searchInputSm" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
       </div>
@@ -73,7 +73,7 @@
   <div class="order-last lg:order-1 lg:w-2/3 w-full">
    <!-- Search Bar -->
     <div class="hidden sm:block">
-      <div class="flex items-center mb-6 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-2 mx-2 bg-off-white dark:bg-charcoal">
+      <div class="flex items-center mb-6 border border-gray-300 dark:border-royal-blue rounded-xl px-4 py-2 mx-2 bg-off-white dark:bg-charcoal">
         <i class="fa fa-search mr-2 text-gray-500 dark:text-gray-400"></i>
         <input type="text" placeholder="Search menu items" id="searchInputLg" class="w-full bg-transparent outline-none text-sm sm:text-lg dark:placeholder-gray-400" />
       </div>
@@ -83,7 +83,7 @@
     <div id="productGrid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
     
       <!-- Card 1 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/coffee.jpg') }}" alt="Coffee" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -99,7 +99,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div data-category="traditional" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="traditional" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/briyani.jpeg') }}" alt="Biryani" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -115,7 +115,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div data-category="specials" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="specials" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/momo.jpg') }}" alt="Momo" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -131,7 +131,7 @@
       </div>
 
       <!-- Card 4 -->
-      <div data-category="traditional" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="traditional" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/pratha.jpg') }}" alt="Paratha" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -147,7 +147,7 @@
       </div>
 
       <!-- Card 5 -->
-      <div data-category="desserts" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="desserts" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/sweets.jpg') }}" alt="Sweets" class="rounded-lg w-full h-40 object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -163,7 +163,7 @@
       </div>
 
       <!-- Card 6 -->
-      <div data-category="seafoods" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="seafoods" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/fish.jpeg') }}" alt="Fishfry" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -178,7 +178,7 @@
         </div>
       </div>
       <!-- card 7 -->
-      <div data-category="appetizer" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="appetizer" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/noodles.jpeg') }}" alt="Noodles" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -194,7 +194,7 @@
       </div>
 
       <!-- card 8 -->
-      <div data-category="specials" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="specials" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/burger.jpg') }}" alt="Burger" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -210,7 +210,7 @@
       </div>
 
       <!-- card 9 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/tea.jpg') }}" alt="Tea" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -225,7 +225,7 @@
         </div>
       </div>
       <!-- card 10 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
           <img src="{{ asset('images/juice.jpg') }}" alt="juice" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
           <div class="flex flex-row p-[5px] items-center justify-between">
@@ -240,7 +240,7 @@
         </div>
       </div>
       <!-- Card 11 -->
-      <div data-category="salads" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="salads" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
             <img src="{{ asset('images/caesar-salad.jpg') }}" alt="Caesar Salad" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row p-[5px] items-center justify-between">
@@ -256,7 +256,7 @@
       </div>
 
       <!-- Card 12 -->
-     <div data-category="desserts" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+     <div data-category="desserts" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
             <img src="{{ asset('images/puff.jpg') }}" alt="Puff Pastry" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row p-[5px] items-center justify-between">
@@ -272,7 +272,7 @@
      </div>
      
      <!-- card 13 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
             <img src="{{ asset('images/redbull.jpg') }}" alt="Red Bull" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row p-[5px] items-center justify-between">
@@ -288,7 +288,7 @@
       </div>
 
       <!-- card 14 -->
-      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-gray-700 rounded-xl p-2 flex items-start justify-between">
+      <div data-category="drinks" class="item-card bg-off-white dark:bg-charcoal border border-gray-200 dark:border-royal-blue rounded-xl p-2 flex items-start justify-between">
         <div class="space-y-2 w-full">
             <img src="{{ asset('images/cocacola.jpg') }}" alt="Coca cola" class="rounded-lg w-full h-auto object-cover transition-transform duration-300 hover:scale-105" />
             <div class="flex flex-row p-[5px] items-center justify-between">
@@ -308,7 +308,7 @@
 
 
   <!-- Right: Basket Sidebar -->
-  <div class="order-first lg:order-2 w-full lg:w-1/3 h-fit bg-off-white dark:bg-charcoal border border-gray-300 dark:border-gray-700 rounded-xl p-6">
+  <div class="order-first lg:order-2 w-full lg:w-1/3 h-fit bg-off-white dark:bg-charcoal border border-gray-300 dark:border-royal-blue">
     <div class="flex justify-between items-center mb-4">
         <h2 class="text-md sm:text-xl font-semibold">Basket</h2>
         <button id="clear-basket" class="text-sm text-royal-blue hover:underline">Clear</button>
@@ -340,7 +340,7 @@
 </div>
 
 <!-- Checkout Modal -->
-<div id="checkout-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+<div id="checkout-modal" class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center hidden z-50">
   <div class="bg-off-white dark:bg-charcoal rounded-lg shadow-lg p-6 w-full max-w-md">
     <div class="flex justify-between items-center mb-4">
       <h2 class="text-xl font-semibold text-charcoal dark:text-off-white">Checkout</h2>
